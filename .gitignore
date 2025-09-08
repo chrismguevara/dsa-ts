@@ -1,36 +1,34 @@
-# Dependencies
-node_modules/
-.pnpm-store/
+# dependencies (bun install)
+node_modules
 
-# Build outputs
-dist/
-build/
+# output
+out
+dist
+*.tgz
 
-# IDE and editor files
-.idea/
-.vscode/
-*.swp
-*.swo
-.DS_Store
+# code coverage
+coverage
+*.lcov
 
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# logs
+logs
+_.log
+report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
-# Environment variables
+# dotenv environment variable files
 .env
+.env.development.local
+.env.test.local
+.env.production.local
 .env.local
-.env.*.local
 
-# Test coverage
-coverage/
-
-# Cache directories
-.cache/
-.temp/
+# caches
 .eslintcache
-.prettier-cache
+.cache
+*.tsbuildinfo
+
+# IntelliJ based IDEs
+.idea
+
+# Finder (MacOS) folder config
+.DS_Store
